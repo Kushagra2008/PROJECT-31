@@ -45,6 +45,7 @@ function setup() {
 } 
 
 function draw() {
+  Engine.update(engine);
   background(0);  
   if (frameCount % 80 == 0)
     {
