@@ -10,7 +10,7 @@ class particle
          }
         this.x = random(30, 450);
         this.y = y;
-        this.body = Bodies.circle(this.x, this.y,10, options);
+        this.body = Bodies.circle(this.x, this.y,15, options);
         this.color = color(random(0, 255), random(0, 255), random(0, 255));
         World.add(world, this.body)
     }
@@ -21,7 +21,7 @@ class particle
         translate(posi.x, posi.y)
         ellipseMode(CENTER);
         fill(this.color);
-        ellipse(0, 0, 10, 10);
+        ellipse(0, 0, 15, 15);
         pop()
     }
 }
